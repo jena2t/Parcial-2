@@ -1,4 +1,3 @@
-
 // Función para formatear números con separadores de miles
 function formatearNumero(numero) {
     return numero.toLocaleString('es-ES');
@@ -54,26 +53,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// 1. Suma de tres valores (AHORA CON INPUTS)
+// 1. Suma de tres valores constantes
 document.getElementById('sumaBtn').addEventListener('click', function() {
-    // Obtener los valores de los inputs
-    const valor1 = parseFloat(document.getElementById('valor1').value);
-    const valor2 = parseFloat(document.getElementById('valor2').value);
-    const valor3 = parseFloat(document.getElementById('valor3').value);
-    
-    // Validar que todos los campos estén completos
-    if (isNaN(valor1) || isNaN(valor2) || isNaN(valor3)) {
-        document.getElementById('resultadoSuma').textContent = 
-            'Por favor, ingresa tres números válidos';
-        return;
-    }
+    // Valores constantes
+    const valor1 = 10;
+    const valor2 = 10;
+    const valor3 = 10;
     
     // Calcular la suma
     const suma = valor1 + valor2 + valor3;
     
     // Mostrar el resultado
     document.getElementById('resultadoSuma').textContent = 
-        `La suma de ${formatearNumero(valor1)} + ${formatearNumero(valor2)} + ${formatearNumero(valor3)} = ${formatearNumero(suma)}`;
+        `La suma de los valores constantes son: ${formatearNumero(suma)}`;
 });
 
 // 2. Cuadrado de un número
