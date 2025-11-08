@@ -103,12 +103,12 @@ document.getElementById('promedioBtn').addEventListener('click', function() {
         return;
     }
     
-    // Validar que las calificaciones estén en el rango correcto (0-20)
-    if (calificacion1 < 0 || calificacion1 > 20 || 
-        calificacion2 < 0 || calificacion2 > 20 || 
-        calificacion3 < 0 || calificacion3 > 20) {
+    // Validar que las calificaciones estén en el rango correcto (0-100)
+    if (calificacion1 < 0 || calificacion1 > 100 || 
+        calificacion2 < 0 || calificacion2 > 100 || 
+        calificacion3 < 0 || calificacion3 > 100) {
         document.getElementById('resultadoPromedio').textContent = 
-            'Las calificaciones deben estar entre 0 y 20';
+            'Las calificaciones deben estar entre 0 y 100';
         return;
     }
     
