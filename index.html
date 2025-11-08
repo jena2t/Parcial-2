@@ -10,9 +10,139 @@
     <div class="container">
         <header>
             <h1>Parcial #2</h1>
-            <p>Jeniffer Arosemena</p>
             <p>Aplicando JS-básico - Calculadora Científica</p>
+            <p>Estudiante: Jeniffer Arosemena</p>
         </header>
+
+        <div class="cards-container">
+            <!-- Tarjeta 1: Suma de tres valores -->
+            <div class="card">
+                <h2>Suma de Tres Valores</h2>
+                <p>Calcula la suma de tres números constantes</p>
+                <button class="btn modal-btn" data-modal="modalSuma">Abrir Calculadora</button>
+            </div>
+
+            <!-- Tarjeta 2: Cuadrado de un número -->
+            <div class="card">
+                <h2>Cuadrado de un Número</h2>
+                <p>Calcula el cuadrado de un número entero</p>
+                <button class="btn modal-btn" data-modal="modalCuadrado">Abrir Calculadora</button>
+            </div>
+
+            <!-- Tarjeta 3: Promedio de calificaciones -->
+            <div class="card">
+                <h2>Promedio de Calificaciones</h2>
+                <p>Calcula el promedio de un estudiante</p>
+                <button class="btn modal-btn" data-modal="modalPromedio">Abrir Calculadora</button>
+            </div>
+
+            <!-- Tarjeta 4: Conversión de unidades -->
+            <div class="card">
+                <h2>Conversión de Unidades</h2>
+                <p>Convierte metros a centímetros y kilómetros</p>
+                <button class="btn modal-btn" data-modal="modalConversion">Abrir Calculadora</button>
+            </div>
+
+            <!-- Tarjeta 5: Comparación de dos valores -->
+            <div class="card">
+                <h2>Comparación de Dos Valores</h2>
+                <p>Determina cuál número es mayor y su diferencia</p>
+                <button class="btn modal-btn" data-modal="modalComparacion">Abrir Calculadora</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 1: Suma de tres valores -->
+    <div id="modalSuma" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Suma de Tres Valores</h2>
+            <div class="input-group">
+                <label>Valor 1: 10</label>
+                <label>Valor 2: 10</label>
+                <label>Valor 3: 10</label>
+            </div>
+            <button id="sumaBtn" class="btn">Calcular Suma</button>
+            <div id="resultadoSuma" class="resultado"></div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Cuadrado de un número -->
+    <div id="modalCuadrado" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Cuadrado de un Número</h2>
+            <div class="input-group">
+                <input type="number" id="numeroCuadrado" placeholder="Ingresa un número">
+            </div>
+            <button id="cuadradoBtn" class="btn">Calcular Cuadrado</button>
+            <div id="resultadoCuadrado" class="resultado"></div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Promedio de calificaciones -->
+    <div id="modalPromedio" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Promedio de Calificaciones</h2>
+            <div class="input-group">
+                <input type="text" id="nombreEstudiante" placeholder="Nombre del estudiante">
+                <input type="number" id="calificacion1" placeholder="Calificación 1" min="0" max="100">
+                <input type="number" id="calificacion2" placeholder="Calificación 2" min="0" max="100">
+                <input type="number" id="calificacion3" placeholder="Calificación 3" min="0" max="100">
+            </div>
+            <button id="promedioBtn" class="btn">Calcular Promedio</button>
+            <div id="resultadoPromedio" class="resultado"></div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Conversión de unidades -->
+    <div id="modalConversion" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Conversión de Unidades</h2>
+            <div class="input-group">
+                <input type="number" id="metros" placeholder="Valor en metros">
+            </div>
+            <button id="conversionBtn" class="btn">Convertir</button>
+            <div id="resultadoConversion" class="resultado"></div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Comparación de dos valores -->
+    <div id="modalComparacion" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Comparación de Dos Valores</h2>
+            <div class="input-group">
+                <input type="number" id="numero1" placeholder="Primer número">
+                <input type="number" id="numero2" placeholder="Segundo número">
+            </div>
+            <button id="comparacionBtn" class="btn">Comparar</button>
+            <div id="resultadoComparacion" class="resultado"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calculadora Científica</h1>
+            <p>Resuelve problemas matemáticos básicos</p>
+        </header>
+
         <div class="cards-container">
             <!-- Tarjeta 1: Suma de tres valores -->
             <div class="card">
